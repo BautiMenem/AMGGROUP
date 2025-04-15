@@ -1,0 +1,264 @@
+body {
+    background-color: #222222;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.countainer1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #111111;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 20%
+}
+
+.slider-wrapper1 {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Distribuir bien las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1200px; /* Asegurar que hay espacio para 3 tarjetas */
+    margin: auto;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.card-item {
+    width: 100%; /* Para que entren exactamente 3 por fila */
+    max-width: 350px; /* Mantiene el tamaño */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1200px) {
+    .card-item {
+        width: calc(50% - 20px); /* Dos tarjetas por fila */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-item {
+        width: 100%; /* Una tarjeta por fila */
+    }
+}
+
+.card-list .card-item {
+    color: white;
+    user-select: none;
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 35px;
+    background-color: #21201f;
+    border: 4px solid #d1a234;
+}
+
+.card-list .card-item .user-name {
+   text-align: center;
+}
+
+.card-list .card-item .user-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 4px;
+    mask-image: linear-gradient(black 80%, transparent);
+}
+  
+.card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 700;
+    margin: 14px 0 40px;
+}
+  
+.card-list .card-item .user-from {
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 300;
+    margin-top: -35px;
+}
+  
+.card-list .card-item .message-button {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #e1b73b;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    margin-top: 10px;
+}
+  
+.card-list .card-item .message-button:hover {
+    background-color: #d1a234;
+}
+
+.texto-fondo6 {
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
+    font-weight: bold;
+    color: rgba(71, 68, 68, 0.1);
+    z-index: 0;
+    white-space: nowrap;
+    user-select: none;
+    max-width: 100vw; /* Evita el scroll horizontal */
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .texto-fondo6 {
+        top: 20%;
+        font-size: clamp(30px, 15vw, 100px); /* Más pequeño para móvil */
+    }
+}
+
+.texto-fondo7 {
+    position: absolute;
+    z-index: -1;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
+    font-weight: bold;
+    color: rgba(71, 68, 68, 0.1);
+    z-index: 0;
+    white-space: nowrap;
+    user-select: none;
+    max-width: 100vw; /* Evita el scroll horizontal */
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .texto-fondo7 {
+        top: 13%;
+        /* Tamaño más cómodo en móviles */
+    }
+}
+
+.card-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* Distribuir bien las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1200px; /* Asegurar que hay espacio para 3 tarjetas */
+    margin: auto;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.card-item1 {
+    width: 100%; /* Para que entren exactamente 3 por fila */
+    max-width: 350px; /* Mantiene el tamaño */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .card-item1 {
+        width: calc(50% - 20px); /* Dos tarjetas por fila */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 800px) {
+    .card-item1 {
+        width: 100%; /* Una tarjeta por fila */
+    }
+}
+
+.card-list1 .card-item1 {
+    color: white;
+    user-select: none;
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 35px;
+    background-color: #21201f;
+    border: 4px solid #d1a234;
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
+
+.card-list1 .card-item1 .user-image1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 4px;
+    mask-image: linear-gradient(black 80%, transparent);
+}
+
+.card-list1 .card-item1 .user-name1 {
+  text-align: center;
+}
+
+.card-list1 .card-item1 .user-profession1 {
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 700;
+    margin: 14px 0 40px;
+}
+  
+.card-list1 .card-item1 .user-from1 {
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 300;
+    margin-top: 35px;
+}
+
+.card-list1 .card-item1 .message-button1 {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #e1b73b;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    margin-top: 10px;
+}
+  
+.card-list1 .card-item1 .message-button1:hover {
+    background-color: #d1a234;
+}
+
+
+@media (max-width: 768px) {  
+   
+    .card-item1{
+        margin: 0;
+    }
+
+    .card-list1 {
+        justify-content: center;
+    }
+}
+
